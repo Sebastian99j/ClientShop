@@ -1,0 +1,39 @@
+.grid1 {
+  margin-top: 10vh;
+  margin-left: 25vh;
+}
+
+.question1 {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.humans {
+  height: 300px;
+  width: 350px;
+  padding: 20px;
+}
+
+.img-list {
+  display: inline-block;
+}
+
+.grid2 {
+  margin-top: 10vh;
+  margin-left: 25vh;
+}
+
+.question2 {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.products {
+  height: 300px;
+  width: 350px;
+  padding: 20px;
+}
+
+.img-list2 {
+  display: inline-block;
+}
