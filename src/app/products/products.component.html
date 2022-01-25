@@ -1,1 +1,11 @@
-<p>products works!</p>
+<div class="search">
+  <input class="form-control" type="text" name="name" [(ngModel)]="searchingName" (ngModelChange)="search()"
+    placeholder="Wyszukaj odpowiedni dział"/>
+</div>
+
+<div *ngFor="let _section of sections; let i = index;">
+  <p class="section-name">{{_section.name}}</p>
+  <div *ngFor="let _product of _section.products; let i = index;" class="productsDiv">
+    <p class="products">{{i+1}}. {{_product.name}} {{_product.price}}zł {{_product.description}} sztuk: {{_product.amount}}    <button class="shoppingCard" (click)="toShoppingCard(_product.id, _section.name, _section.id)">To shopping card</button></p>
+  </div>
+</div>

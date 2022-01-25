@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-flow: row;
+}
+
+.section-name {
+  font-size: 30px;
+  font-weight: bold;
+  border-style: solid;
+  padding-left: 45%;
+}
+
+.products {
+  display: block;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1vh;
+  font-size: 18px;
+}
+
+.search {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5vh;
+}
+
+.productsDiv{
+  display: inline;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1vh;
+  font-size: 18px;
+}
+
+.shoppingCard {
+  float: right;
+  padding-right: 5vh;
+  margin-right: 5vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 0px;
+}
+
+.section-button {
+  float: right;
+  align-items: center;
+  align-content: center;
+  font-size: 18px;
+  margin: 5px;
+}

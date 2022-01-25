@@ -1,1 +1,18 @@
-<p>order works!</p>
+<div class="form-group">
+  <label for="power" class="form-title">Formularz zamówienia</label>
+  <h4>Dane produktu:</h4>
+  <div class="productToSell">
+    <p class="product">Nazwa: {{products[0].name}} Opis: {{products[0].description}} Cena: {{products[0].price}} zł</p>
+  </div>
+  <h4>Dane klienta:</h4>
+  <input type="text" class="form-control" id="name"
+       required placeholder="first name"
+       [(ngModel)]="first_name" name="first_name">
+       <input type="text" class="form-control" id="name"
+       required placeholder="last name"
+       [(ngModel)]="last_name" name="last_name">
+       <input type="number" class="form-control" id="name"
+       required placeholder="card number"
+       [(ngModel)]="cardNumber" name="card_number">
+  <button (click)="sendData()" class="sendButton">Zatwierdź</button>
+</div>
