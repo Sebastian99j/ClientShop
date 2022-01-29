@@ -1,3 +1,4 @@
+import { SummaryOrderComponent } from './summary-order/summary-order.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'products', component: ProductsComponent},
   {path: 'about', component: AboutComponent},
   {path: 'order', component: OrderComponent},
+  {path: 'summary', component: SummaryOrderComponent},
   {path: '**', component: NotFoundComponent},
 ];
 

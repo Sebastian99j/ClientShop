@@ -1,0 +1,77 @@
+<section>
+<span class="col s10">
+<p class="title_doc">Dokument sprzedaży</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID dokumentu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{salesInvoices[0].name}}</td>
+      </tr>
+    </tbody>
+  </table>
+<p class="subtitle">Dane klienta</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Imie</th>
+        <th>Nazwisko</th>
+        <th>Nr karty</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{clients[0].first_name}}</td>
+        <td>{{clients[0].last_name}}</td>
+        <td>{{clients[0].cardNumber}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="subtitle">Nr zamówienia</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>NR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{orders[0].name}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="subtitle">Produkt</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Nazwa</th>
+        <th>Opis</th>
+        <th>Dział</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{products[0].name}}</td>
+        <td>{{products[0].description}}</td>
+        <td>{{sections[0].name}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="subtitle">Podsumowanie</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Cena</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{products[0].price}} zł</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+</section>

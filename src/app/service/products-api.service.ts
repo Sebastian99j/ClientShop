@@ -1,3 +1,4 @@
+import { SalesInvoice } from './../model/SalesInvoice';
 import { Product } from './../model/Product';
 import { Order } from './../model/Order';
 import { Client } from './../model/Client';
@@ -16,6 +17,7 @@ export class ProductsApiService {
   private url2 = 'http://localhost:8080/api/clients';
   private url3 = 'http://localhost:8080/api/orders';
   private url4 = 'http://localhost:8080/api/products';
+  private url5 = 'http://localhost:8080/api/sales_invoice';
 
   constructor(private http: HttpClient) { }
 
@@ -29,8 +31,8 @@ export class ProductsApiService {
       .pipe(tap(console.log));
   }
 
-  postClient(client: Client, id?: number){
-    return this.http.post(this.url2+'/save/'+id, client)
+  postClient(client: Client, id?: number): Observable<Client>{
+    return this.http.post(this.url2+'/'+id, client)
       .pipe(tap(console.log));
   }
 
@@ -56,6 +58,16 @@ export class ProductsApiService {
 
   putProduct(product: Product, id1: number | undefined, id2: number | undefined): Observable<{}>{
     return this.http.put<{}>(this.url4+'/put/'+id1+"/"+id2, product)
+      .pipe(tap(console.log));
+  }
+
+  getSalesInvoice(): Observable<SalesInvoice[]>{
+    return this.http.get<SalesInvoice[]>(this.url5)
+      .pipe(tap(console.log));
+  }
+
+  postSalesInovice(salesInvoice: SalesInvoice, id1?: number, id2?: number, id3?: number): Observable<SalesInvoice>{
+    return this.http.post(this.url5+'/'+id1+"/"+id2+"/"+id3, salesInvoice)
       .pipe(tap(console.log));
   }
 }

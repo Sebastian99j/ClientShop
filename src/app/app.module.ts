@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { OrderComponent } from './order/order.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { SummaryOrderComponent } from './summary-order/summary-order.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     ProductsComponent,
     NotFoundComponent,
     AboutComponent,
-    OrderComponent
+    OrderComponent,
+    SummaryOrderComponent
   ],
   imports: [
     BrowserModule,

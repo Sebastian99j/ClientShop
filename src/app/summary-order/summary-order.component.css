@@ -1,0 +1,19 @@
+.title_doc {
+  font-size: 70px;
+  font-weight: bold;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section {
+  background-color: beige;
+  padding: 15px;
+  border-style: solid;
+  margin: 30px;
+}
